@@ -235,6 +235,7 @@ body {
   position: relative;
 }
 .menu-mobile > ul > li.menu-item-has-children > ul {
+  display: none;
   margin-left: 20px;
 }
 .menu-mobile > ul > li.menu-item-has-children > ul > li {

@@ -255,6 +255,7 @@ $myYeallo: #f5f32c;
         > li.menu-item-has-children {
             position: relative;
             > ul {
+                display: none;
                 margin-left: 20px;
                 > li {
                     list-style: none;
