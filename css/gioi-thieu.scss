@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+}
+$myBlack: #000;
+$myWhite: #fff;
+$myBoder: rgba(210, 210, 210, 0.3);
+$myRed: #e62901;
+$myText: #f03b02;
+$mygrey: #959595;
+$colorBgr-search: #010e2a;
+$myform: #313437;
+$myHomeintro: #f3f2f0;
+$myYeallo: #f5f32c;
+$myBlue: #0062cc;
+.page-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $myText;
+    margin: 0;
+}
+@media screen and (max-width: 500px){
+    .page-title{
+        font-size: 20px;
+    }
+}
+.about-text {
+    padding: 60px 0;
+    .about-text__content {
+        margin-top: 40px;
+        font-size: 16px;
+        p{
+            font-size: 16px;
+        }
+    }
+}
+.about-vision {
+    padding: 60px 0;
+    background-color: #fff8f2;
+    .about-vision__desc {
+        margin-top: 40px;
+        font-size: 16px;
+        p{
+            font-size: 16px;
+        }
+    }
+}
+.about-prize {
+    padding: 60px 0;
+    background-color: #f3f2f0;
+    .about-prize__img {
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+    .about-prize__content {
+        margin-top: 30px;
+        font-size: 20px;
+        position: relative;
+        p {
+            color: $myText;
+            text-align: center;
+        }
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -50px;
+            content: url(../svg/ngoackep3.svg);
+        }
+        &::after {
+            position: absolute;
+            top: 0;
+            right: -50px;
+            transform: rotate(180deg);
+            content: url(../svg/ngoackep3.svg);
+        }
+    }
+}
+@media screen and (max-width: 692px) {
+    .about-prize .about-prize__content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        p {
+            font-size: 16px;
+        }
+    }
+    .about-prize .about-prize__content::after {
+        position: absolute;
+        top: 0;
+        right: -25px;
+        transform: rotate(180deg);
+        content: url(../svg/ngoackep.svg);
+    }
+    .about-prize .about-prize__content::before {
+        position: absolute;
+        top: 0;
+        left: -25px;
+        content: url(../svg/ngoackep.svg);
+    }
+}
+.about-history {
+    padding: 60px 0;
+    .about-history__list {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 1.5;
+        p {
+            font-size: 16px;
+            &:first-child {
+                color: #fff;
+                padding: 4px 6px;
+                margin-right: 15px;
+                background-color: $myText;
+            }
+            &:last-child {
+                background-color: #f3f2f0;
+                padding: 10px 20px;
+                position: relative;
+                border-radius: 5px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    width: 20px;
+                    height: 20px;
+                    background-color: #f3f2f0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    .about-history .about-history__list p{
+        line-height: 1.5;
+    }
+}
+.about-chart {
+    padding: 60px 0;
+    .about-chart__left {
+        margin-top: 40px;
+        p {
+            font-size: 16px;
+            margin: 0 0 10px 0;
+            line-height: 1.6;
+        }
+    }
+    .about-chart__right {
+        .about-chart__img {
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+.about-project {
+    padding: 60px 0;
+    .about-project__list {
+        margin-top: 40px;
+        .about-project__item {
+            position: relative;
+            overflow: hidden;
+            .about-project__img {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.3s all;
+                }
+                &:hover img {
+                    transform: rotate(-5deg) scale(1.2);
+                }
+            }
+            .about-project__name {
+                margin: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 50px;
+                background: linear-gradient(8deg, rgba(0, 0, 0, 0.6867121849) 0%, rgba(255, 255, 255, 0) 100%);
+                a {
+                    text-decoration: none;
+                    position: relative;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    text-align: center;
+                    font-weight: 700;
+                    top: 25%;
+                }
+            }
+        }
+    }
+    .about-project__btn {
+        position: relative;
+        margin-top: 40px;
+        background-color: $myText;
+        position: relative;
+        left: 50%;
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 27px;
+        transform: translateX(-50%);
+        border-radius: 3px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            left: 5px;
+            border: 1px solid #fff;
+        }
+        &:hover {
+            background-color: #0062cc;
+        }
+    }
+    @media screen and (min-width: 280px) {
+        .row.no-gutters1 {
+            margin-right: 0;
+            margin-left: 0;
+    
+            & > [class^="col-"],
+            & > [class*=" col-"] {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+.home-investor {
+    padding: 60px 0 100px 0;
+    margin: 0;
+    background-color: #f3f2f0;
+    .home-investor__wrap {
+        margin-top: 40px;
+    }
+}

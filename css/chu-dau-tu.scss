@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+}
+$myBlack: #000;
+$myWhite: #fff;
+$myBoder: rgba(210, 210, 210, 0.3);
+$myRed: #e62901;
+$myText: #f03b02;
+$mygrey: #959595;
+$colorBgr-search: #010e2a;
+$myform: #313437;
+$myHomeintro: #f3f2f0;
+$myYeallo: #f5f32c;
+$myBlue: #0062cc;
+.home-banner__wrap {
+    position: relative;
+    .banner-search {
+        width: 100%;
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        form {
+            margin-left: auto;
+            margin-right: auto;
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                outline: none;
+                border: none;
+                background-color: #fff;
+                border-radius: 8px 0px 0px 8px;
+                &::after {
+                    content: url("../svg/search-solid3.svg");
+                    position: relative;
+                    top: 3px;
+                }
+            }
+            input {
+                width: 100%;
+                height: 40px;
+                border-left: 1px solid red;
+                border: none;
+                outline: none;
+                padding-left: 20px;
+                border-radius: 0px 8px 8px 0px;
+                &::placeholder {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-banner__wrap span {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .home-banner__wrap .banner-search form input {
+        padding-left: 0;
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .home-banner__wrap .banner-search form input {
+        padding-left: 0;
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
+}
+@media screen and (max-width: 555px) {
+    .home-banner__wrap .banner-search form input {
+        padding-left: 0;
+        &::placeholder {
+            font-size: 10px;
+        }
+    }
+}
+@media screen and (max-width: 475px) {
+    .home-banner__wrap .banner-search form input {
+        padding-left: 0;
+        &::placeholder {
+            font-size: 8px;
+        }
+    }
+}
+@media screen and (max-width: 475px) {
+    .banner-search .cotainer {
+        display: none;
+    }
+}
+.investor {
+    padding: 80px 0;
+    p {
+        font-size: 16px;
+    }
+    .investor-list {
+        margin-top: 40px;
+        .investor-item {
+            .investor-item__img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                border: 1px solid #8b8b8b;
+                height: 200px;
+                box-shadow: 0px 4px 3px #00000026;
+                border-radius: 8px;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+            .investor-item__name {
+                text-decoration: none;
+                color: $myText;
+                font-size: 17px;
+                text-transform: uppercase;
+                margin: 10px 0;
+                line-height: 2;
+                font-weight: 700;
+            }
+            .investor-item__desc {
+                font-size: 16px;
+                list-style: 1.7;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+            }
+        }
+    }
+}

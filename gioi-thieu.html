@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./flickity/flickity.min.css">
+    <link rel="stylesheet" href="./wow/animate.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/tuyen-dung.css">
+    <link rel="stylesheet" href="./css/gioi-thieu.css">
+    <title>Chủ đầu tư</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <div class="header-top" id="header-top">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="header-top__left">
+            <ul>
+              <li>
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope"
+                  class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                    d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z">
+                  </path>
+                </svg>
+                <a href="mailto:batdongsanhanghieu@gmail.com">batdongsanhanghieu@gmail.com</a>
+              </li>
+              <li>
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mobile-alt"
+                  class="svg-inline--fa fa-mobile-alt fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512">
+                  <path fill="currentColor"
+                    d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z">
+                  </path>
+                </svg>
+                <a href=" tel:0932782977">0932.782.977</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-top__right">
+            <ul>
+              <li>
+                <a href="">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
+                    class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                    class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li><a href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube-square"
+                    class="svg-inline--fa fa-youtube-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z">
+                    </path>
+                  </svg></a>
+              </li>
+              <li><a href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                    class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                    </path>
+                  </svg></a>
+              </li>
+              <li><a href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="invision"
+                    class="svg-inline--fa fa-invision fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M407.4 32H40.6C18.2 32 0 50.2 0 72.6v366.8C0 461.8 18.2 480 40.6 480h366.8c22.4 0 40.6-18.2 40.6-40.6V72.6c0-22.4-18.2-40.6-40.6-40.6zM176.1 145.6c.4 23.4-22.4 27.3-26.6 27.4-14.9 0-27.1-12-27.1-27 .1-35.2 53.1-35.5 53.7-.4zM332.8 377c-65.6 0-34.1-74-25-106.6 14.1-46.4-45.2-59-59.9.7l-25.8 103.3H177l8.1-32.5c-31.5 51.8-94.6 44.4-94.6-4.3.1-14.3.9-14 23-104.1H81.7l9.7-35.6h76.4c-33.6 133.7-32.6 126.9-32.9 138.2 0 20.9 40.9 13.5 57.4-23.2l19.8-79.4h-32.3l9.7-35.6h68.8l-8.9 40.5c40.5-75.5 127.9-47.8 101.8 38-14.2 51.1-14.6 50.7-14.9 58.8 0 15.5 17.5 22.6 31.8-16.9L386 325c-10.5 36.7-29.4 52-53.2 52z">
+                    </path>
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="header-logo">
+            <a href="" class="header-logo__img">
+              <img src="./img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="header-menu d-none d-xl-block">
+            <ul>
+              <li><a href="./index.html">trang chủ</a></li>
+              <li><a href="./gioi-thieu.html">giới thiệu</a></li>
+              <li class="menu-item-has-children">
+                <a href="./loai-du-an.html">loại dự án</a>
+                <ul>
+                  <li><a href="">Căn hộ</a></li>
+                  <li><a href="">Nhà phố</a></li>
+                  <li><a href="">Shophouse</a></li>
+                  <li><a href="">Biệt thự</a></li>
+                  <li><a href="">BĐS nghỉ dưỡng</a></li>
+                  <li><a href="">Đất nền</a></li>
+                </ul>
+              </li>
+              <li><a href="./chu-dau-tu.html">chủ đầu tư</a></li>
+              <li><a href="./tin-tuc.html">tin tức</a></li>
+              <li><a href="./tuyen-dung.html">tuyển dụng</a></li>
+              <li><a href="./lien-he.html">liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="header-bar d-block d-xl-none">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+              class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!-- side-bar -->
+  <div class="menu-mobile">
+    <div class="menu-mobile__close">
+    </div>
+    <ul>
+      <li class="current-menu-item"><a href="./index.html">trang chủ</a></li>
+      <li><a href="./gioi-thieu.html">giới thiệu</a></li>
+      <li class="menu-item-has-children">
+        <a href="./loai-du-an.html">loại dự án</a>
+        <ul>
+          <li><a href="">Căn hộ</a></li>
+          <li><a href="">Nhà phố</a></li>
+          <li><a href="">Shophouse</a></li>
+          <li><a href="">Biệt thự</a></li>
+          <li><a href="">BĐS nghỉ dưỡng</a></li>
+          <li><a href="">Đất nền</a></li>
+        </ul>
+      </li>
+      <li><a href="./chu-dau-tu.html">chủ đầu tư</a></li>
+      <li><a href="./tin-tuc.html">tin tức</a></li>
+      <li><a href="./tuyen-dung.html">tuyển dụng</a></li>
+      <li><a href="./lien-he.html">liên hệ</a></li>
+    </ul>
+  </div>
+  <!-- overlay -->
+  <div class="overlay"></div>
+    <!-- home-banner -->
+    <div class="home-banner__wrap">
+        <div class="home-banner"
+            data-flickity='{"cellAlign":"left", "contain": true, "autoPlay": 3000, "imagesLoaded":true}'>
+            <a class="home-banner__img w-100 d-block">
+                <img src="./img/banner.jpg" alt="Anh banner">
+            </a>
+            <a class="home-banner__img w-100 d-block">
+                <img src="./img/banner.jpg" alt="Anh banner">
+            </a>
+            <a class="home-banner__img w-100 d-block">
+                <img src="./img/banner.jpg" alt="Anh banner">
+            </a>
+        </div>
+        <span>
+            Giới thiệu
+        </span>
+    </div>
+    <main>
+        <!-- next-page -->
+        <section class="next-page">
+            <div class="container">
+                <span>Trang chủ / </span> <strong>Giới thiệu</strong>
+            </div>
+        </section>
+        <section class="about-text">
+            <div class="container">
+                <h4 class="page-title text-center font-weight-bold">
+                    về bất động sản hàng hiệu
+                </h4>
+                <div class="about-text__content ws-sgct">
+                    <p>
+                        BẤT ĐỘNG SẢN HÀNG HIỆU đã trở thành một trong những sàn giao dịch bất dộng sản uy tín hàng đầu
+                        tại TP. Hồ Chí Minh nói riêng và thị trường bất động sản Việt Nam nói chung. BẤT ĐỘNG SẢN HÀNG
+                        HIỆU tự hào là “ĐỐI TÁC CHIẾN LƯỢC – PHÂN PHỐI CHÍNH THỨC F1” các dự án, khu đô thị của những
+                        chủ đầu tư uy tín tại Việt Nam như (Phú Mỹ Hưng, Novaland, Vinhomes, Sunshine, Masterise Homes,
+                        Hồng Hà, Đất Xanh,…) <br>
+                        Sàn giao dịch BẤT ĐỘNG SẢN HÀNG HIỆU chuyên tư vấn môi giới & phân phối các dự án bất động sản
+                        với đa dạng loại hình Căn hộ chung cư, Nhà phố, Biệt thự, Shophouse & Bất động sản nghỉ dưỡng
+                        tại thị trường TP.Hồ Chí Minh, Hà Nội, Đà Nẵng, Bình Dương, Đồng Nai, Vũng Tàu, Long An, Nha
+                        Trang, Phú Quốc, Phan Thiết,…
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="about-vision">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="page-title text-center font-weight-bold">
+                            tầm nhìn
+                        </h4>
+                        <div class="about-vision__desc ws-sgct">
+                            <p>
+                                Đến 2025 trở thành 1 trong 10 đơn vị môi giới uy tín & tư vấn giải pháp bất động sản
+                                chuyên nghiệp hàng đầu TP. Hồ Chí Minh nói riêng & Việt Nam nói chung. Đến 2030 trở
+                                thành nhà phát triển dự án bất động sản uy tín chuyên nghiệp, mang đến giải pháp an sinh
+                                – đầu tư toàn diện cho khách hàng & nhà đầu tư, đồng thời đóng góp cho sự phát triển bền
+                                vững của thị trường bất động sản Việt Nam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="page-title text-center font-weight-bold">
+                            sứ mệnh
+                        </h4>
+                        <div class="about-vision__desc ws-sgct">
+                            <p>
+                                Kiến tạo & mang đến cho Khách Hàng – Nhà Đầu Tư giải pháp an sinh hoàn hảo cũng như cơ
+                                hội đầu tư sinh lợi cao an toàn bền vững. Luôn nỗ lực góp 1 phần công sức cho sự phát
+                                triển của thị trường bất động sản thông qua đó đóng góp vào công cuộc ổn định an sinh xã
+                                hội, phát triển kinh tế nước nhà. Với tinh thần nhiệt huyết luôn luôn lao động cần cù,
+                                kiến tạo cho cộng đồng xã hội những giá trị nhân văn chan chứa tình người và tình đời.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-prize">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="about-prize__img">
+                            <img src="./img/achievements.png" alt="">
+                        </div>
+                        <div class="about-prize__content text-center font-weight-bold ws-sgct">
+                            <p>
+                                Bất Động Sản Hàng Hiệu là thương hiệu bất động sản số 1 Việt Nam, hoạt động trong lĩnh
+                                vực phát
+                                triển, chuyển nhượng và vận hành bất động sản
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-history">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="about-history__list d-flex align-items-center ws-sgct">
+                            <p>
+                                2017
+                            </p>
+                            <p>
+                                Cuối 2017 và đầu 2018 chính thức thành lập Công Ty Cổ Phần Bất Động Sản Hàng Hiệu với
+                                đội ngũ hơn 100 thành viên - Trên nền tảng vững chắc, Bất Động Sản Hàng Hiệu ra đời như
+                                một quy luật tất yếu đáp ứng nhu cầu của thị trường.
+                            </p>
+                        </div>
+                        <div class="about-history__list d-flex align-items-center ws-sgct">
+                            <p>
+                                2018
+                            </p>
+                            <p>
+                                Cuối 2017 và đầu 2018 chính thức thành lập Công Ty Cổ Phần Bất Động Sản Hàng Hiệu với
+                                đội ngũ hơn 100 thành viên - Trên nền tảng vững chắc, Bất Động Sản Hàng Hiệu ra đời như
+                                một quy luật tất yếu đáp ứng nhu cầu của thị trường.
+                            </p>
+                        </div>
+                        <div class="about-history__list d-flex align-items-center ws-sgct">
+                            <p>
+                                2019
+                            </p>
+                            <p>
+                                Tập trung xây dựng nền tảng và giá trị cốt lõi, lấy con người làm trung tâm, tăng quy mô
+                                nhân sự, chuyên phân phối các dòng Căn Hộ, Nhà Phố, Biệt Thự tại TP. HCM.
+                            </p>
+                        </div>
+                        <div class="about-history__list d-flex align-items-center ws-sgct">
+                            <p>
+                                2020
+                            </p>
+                            <p>
+                                Đầu 2020 với nền tảng vững chắc, uy tín và năng lực, Bất Động Sản Hàng Hiệu chính thức
+                                trở thành Đơn Vị Phân Phối Chính Thức F1 siêu dự án Vinhomes Grand Park, Masteri Centre
+                                Point, AquaCity.
+                            </p>
+                        </div>
+                        <div class="about-history__list d-flex align-items-center ws-sgct">
+                            <p>
+                                2021
+                            </p>
+                            <p>
+                                Đầu 2021 trở thành Đơn Vị Phân Phối Chính Thức F1 siêu dự án Grand Marina, Saigon,
+                                Lumière Riverside.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-chart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h4 class="page-title text-center font-weight-bold">
+                            sơ đồ tổ chức
+                        </h4>
+                        <div class="ws-sgct about-chart__left ">
+                            <p>
+                                Minh bạch và hiệu quả là những mục tiêu quan trọng hàng đầu mà mô hình quản trị doanh
+                                nghiệp
+                                của BẤT ĐỘNG SẢN HÀNG HIỆU hướng tới.
+                            </p>
+                            <p>
+                                Hội đồng Quản trị BẤT ĐỘNG SẢN HÀNG HIỆU ý thức sâu sắc rằng chỉ có xây dựng và vận hành
+                                được hệ thống quản trị doanh nghiệp đảm bảo các tiêu chí đó mới mang lại cho cổ đông của
+                                BẤT
+                                ĐỘNG SẢN HÀNG HIỆU những giá trị và sự phát triển bền vững.
+                            </p>
+                            <p>
+                                BẤT ĐỘNG SẢN HÀNG HIỆU được tổ chức theo cấu trúc phù hợp với các thông lệ quốc tế tốt
+                                nhất.
+                                Trong đó, vai trò sở hữu, quản trị và điều hành được tách bạch. Các hoạt động của Công
+                                ty
+                                được tổ chức theo các khối chức năng, phụ trách các lĩnh vực trong chuỗi giá trị.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="about-chart__right d-flex justify-content-center">
+                            <div class="about-chart__img">
+                                <img src="./img/sodo.png" alt="sodo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-project">
+            <h4 class="page-title text-center font-weight-bold">
+                các dự án chuyển khai
+            </h4>
+            <div class="about-project__list">
+                <div class="row no-gutters1">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="about-project__item">
+                            <a href="" class="about-project__img">
+                                <img src="./img/gioithieu/anh2-tong-the-du-an-grand-marina-saigon-quan-1-600x400.jpg"
+                                    alt="">
+                            </a>
+                            <p class="about-project__name ws-sgct text-center">
+                                <a href="">
+                                    vinhomes grand park
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="about-project__item">
+                            <a href="" class="about-project__img">
+                                <img src="./img/gioithieu/anh3-du-an-lumiere-riverside-600x400.jpg" alt="">
+                            </a>
+                            <p class="about-project__name ws-sgct text-center">
+                                <a href="">
+                                    vinhomes grand park
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="about-project__item">
+                            <a href="" class="about-project__img">
+                                <img src="./img/gioithieu/anh4-du-an-masteri-centre-point-quan-9-bat-dong-san-hang-hieu-600x400.jpg"
+                                    alt="">
+                            </a>
+                            <p class="about-project__name ws-sgct text-center">
+                                <a href="">
+                                    vinhomes grand park
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="about-project__item">
+                            <a href="" class="about-project__img">
+                                <img src="./img/gioithieu/anh5-du-an-one-central-saigon-600x400.jpg" alt="">
+                            </a>
+                            <p class="about-project__name ws-sgct text-center">
+                                <a href="">
+                                    vinhomes grand park
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="about-project__item">
+                            <a href="" class="about-project__img">
+                                <img src="./img/gioithieu/anh6-tong-quan-du-an-thao-dien-green-quan-2-600x400.jpg"
+                                    alt="">
+                            </a>
+                            <p class="about-project__name ws-sgct text-center">
+                                <a href="">
+                                    vinhomes grand park
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="about-project__btn d-inline-block text-uppercase">
+                xem thêm dự án
+            </a>
+        </section>
+        <!-- home-investor -->
+        <section class="home-investor">
+            <div class="container">
+                <h4 class="page-title text-center font-weight-bold">
+                    đối tác & chủ đầu tư uy tín
+                </h4>
+                <div class="home-investor__wrap"
+                    data-flickity='{"cellAlign":"left", "contain": true, "pageDots": false, "autoPlay": 2500, "imagesLoaded":true}'>
+                    <div class="home-investor__item d-flex flex-wrap w-100 ">
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                    </div>
+                    <div class="home-investor__item d-flex flex-wrap w-100">
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                        <a href=""
+                            class="investor__item-img col-4 col-xl-2 col-xl-20p d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-san-nam-long.jpg" alt="Ảnh logo-san-nam-long">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- footer-top -->
+        <section class="footer-top">
+            <div class="container">
+                <div class="row row-gap-30">
+                    <div class="col-lg-4 col-md-12 mt-3">
+                        <div class="footer-top__contact">
+                            <a href="" class="footer__contact-logo">
+                                <img src="./img/logo.png" alt="">
+                            </a>
+                            <ul>
+                                <li>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="21px"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#f03b02"
+                                                d="M12,14c2.206,0,4-1.794,4-4s-1.794-4-4-4s-4,1.794-4,4S9.794,14,12,14z M12,8c1.103,0,2,0.897,2,2s-0.897,2-2,2 s-2-0.897-2-2S10.897,8,12,8z" />
+                                            <path
+                                                d="M11.42,21.814C11.594,21.938,11.797,22,12,22s0.406-0.062,0.58-0.186C12.884,21.599,20.029,16.44,20,10 c0-4.411-3.589-8-8-8S4,5.589,4,9.995C3.971,16.44,11.116,21.599,11.42,21.814z M12,4c3.309,0,6,2.691,6,6.005 c0.021,4.438-4.388,8.423-6,9.73C10.389,18.427,5.979,14.441,6,10C6,6.691,8.691,4,12,4z" />
+                                        </svg>
+                                    </span>
+                                    133-135 Lương Định Của, phường Bình An, Quận 2, TP. Hồ Chí Minh, Việt Nam 7000
+                                </li>
+                                <li>
+                                    <span>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="phone-volume" class="svg-inline--fa fa-phone-volume fa-w-12"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M97.333 506.966c-129.874-129.874-129.681-340.252 0-469.933 5.698-5.698 14.527-6.632 21.263-2.422l64.817 40.513a17.187 17.187 0 0 1 6.849 20.958l-32.408 81.021a17.188 17.188 0 0 1-17.669 10.719l-55.81-5.58c-21.051 58.261-20.612 122.471 0 179.515l55.811-5.581a17.188 17.188 0 0 1 17.669 10.719l32.408 81.022a17.188 17.188 0 0 1-6.849 20.958l-64.817 40.513a17.19 17.19 0 0 1-21.264-2.422zM247.126 95.473c11.832 20.047 11.832 45.008 0 65.055-3.95 6.693-13.108 7.959-18.718 2.581l-5.975-5.726c-3.911-3.748-4.793-9.622-2.261-14.41a32.063 32.063 0 0 0 0-29.945c-2.533-4.788-1.65-10.662 2.261-14.41l5.975-5.726c5.61-5.378 14.768-4.112 18.718 2.581zm91.787-91.187c60.14 71.604 60.092 175.882 0 247.428-4.474 5.327-12.53 5.746-17.552.933l-5.798-5.557c-4.56-4.371-4.977-11.529-.93-16.379 49.687-59.538 49.646-145.933 0-205.422-4.047-4.85-3.631-12.008.93-16.379l5.798-5.557c5.022-4.813 13.078-4.394 17.552.933zm-45.972 44.941c36.05 46.322 36.108 111.149 0 157.546-4.39 5.641-12.697 6.251-17.856 1.304l-5.818-5.579c-4.4-4.219-4.998-11.095-1.285-15.931 26.536-34.564 26.534-82.572 0-117.134-3.713-4.836-3.115-11.711 1.285-15.931l5.818-5.579c5.159-4.947 13.466-4.337 17.856 1.304z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    Hotline: <a href="tel:0932782977">0932.782.977</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope"
+                                            class="svg-inline--fa fa-envelope fa-w-16" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <a href="mailto:batdongsanhanghieu@gmail.com">batdongsanhanghieu@gmail.com</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="globe"
+                                            class="svg-inline--fa fa-globe fa-w-16" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                            <path fill="currentColor"
+                                                d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <a href="#">batdongsanhanghieu.com</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
+                                            class="svg-inline--fa fa-facebook fa-w-16" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                            </path>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                                            class="svg-inline--fa fa-twitter fa-w-16" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                            </path>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab"
+                                            data-icon="youtube-square" class="svg-inline--fa fa-youtube-square fa-w-14"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z">
+                                            </path>
+                                        </svg> </a></li>
+                                <li><a href="">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab"
+                                            data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                            </path>
+                                        </svg> </a></li>
+                                <li><a href="">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="invision"
+                                            class="svg-inline--fa fa-invision fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M407.4 32H40.6C18.2 32 0 50.2 0 72.6v366.8C0 461.8 18.2 480 40.6 480h366.8c22.4 0 40.6-18.2 40.6-40.6V72.6c0-22.4-18.2-40.6-40.6-40.6zM176.1 145.6c.4 23.4-22.4 27.3-26.6 27.4-14.9 0-27.1-12-27.1-27 .1-35.2 53.1-35.5 53.7-.4zM332.8 377c-65.6 0-34.1-74-25-106.6 14.1-46.4-45.2-59-59.9.7l-25.8 103.3H177l8.1-32.5c-31.5 51.8-94.6 44.4-94.6-4.3.1-14.3.9-14 23-104.1H81.7l9.7-35.6h76.4c-33.6 133.7-32.6 126.9-32.9 138.2 0 20.9 40.9 13.5 57.4-23.2l19.8-79.4h-32.3l9.7-35.6h68.8l-8.9 40.5c40.5-75.5 127.9-47.8 101.8 38-14.2 51.1-14.6 50.7-14.9 58.8 0 15.5 17.5 22.6 31.8-16.9L386 325c-10.5 36.7-29.4 52-53.2 52z">
+                                            </path>
+                                        </svg> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 mt-3">
+                        <div class="footer-top__option">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                    <div class="footer__option-nav">
+                                        <h4 class="option-nav__h4 foodter__option-h4">
+                                            THÔNG TIN CÔNG TY
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Trang chủ</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Giới thiệu</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Loại dự án</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Chủ đầu tư</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Tin tức</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Tuyển dụng</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Liên hệ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                    <div class="footer__option-nav">
+                                        <h4 class="option-nav__h4 foodter__option-h4">
+                                            BẤT ĐỘNG SẢN HÀNG HIỆU
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Căn hộ</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Nhà phố</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Shophouse</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Biệt thự</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">BĐS nghỉ dưỡng</a>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z" />
+                                                    </svg>
+                                                </span>
+                                                <a href="">Đất nền</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                        <div class="footer-top__form">
+                            <h4 class="footer-form__h4 foodter__option-h4">
+                                ĐĂNG KÝ NHẬN THÔNG TIN
+                            </h4>
+                            <div class="footer__form">
+                                <div class="row">
+                                    <form action="">
+                                        <div class="col-12 w-100">
+                                            <input type="text" placeholder="Nhập họ tên">
+                                        </div>
+                                        <div class="col-12 w-100">
+                                            <input type="number" placeholder="Nhập điện thoại">
+                                        </div>
+                                        <div class="col-12 w-100">
+                                            <input type="tel" placeholder="Nhập email">
+                                        </div>
+                                        <div class="col-12 w-100">
+                                            <textarea rows="5" placeholder="Nhập nội dung"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <button class="footer__form-btn" type="button">
+                                Gửi tin nhắn
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer-end -->
+        <section class="footer-end">
+            <div class="container text-center d-flex align-items-center justify-content-center flex-wrap">
+                <span class="color-text__foodter">Bất động sản hàng hiệu. All rights reserved</span>
+                <span class="color-text__foodter span2-foodter">&nbsp | &nbsp</span>
+                <a class="hover-a" href="">Chính sách bảo mật</a>
+            </div>
+        </section>
+    </footer>
+
+    <section class="add__item">
+        <div id="item__btn-back"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+            class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" width="20px"
+            height="20px" viewBox="0 0 448 512">
+            <path fill="#000"
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+            </path>
+          </svg></div>
+    
+        <div class="mobile_animation d-flex justify-content-center align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24"><path fill="#fff" d="M12,3c-4.92,0-8.91,3.729-8.91,8.332c0,2.616,1.291,4.952,3.311,6.479V21l3.041-1.687	c0.811,0.228,1.668,0.35,2.559,0.35c4.92,0,8.91-3.73,8.91-8.331C20.91,6.729,16.92,3,12,3z M12.938,14.172l-2.305-2.394	l-4.438,2.454l4.865-5.163l2.305,2.395l4.439-2.455L12.938,14.172z"/></svg>
+        </div>
+      </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./flickity/flickity.pkgd.min.js"></script>
+<script src="./wow/wow.min.js"></script>
+<script src="./app.js"></script>
+
+</html>

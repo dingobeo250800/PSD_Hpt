@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+}
+$myBlack: #000;
+$myWhite: #fff;
+$myBoder: rgba(210, 210, 210, 0.3);
+$myRed: #e62901;
+$myText: #f03b02;
+$myColor: #b4aca8;
+$colorBgr-search: #010e2a;
+$myform: #313437;
+$myHomeintro: #f3f2f0;
+$myYeallo: #f5f32c;
+$myBlue: #0062cc;
+
+.new-head {
+    margin-top: 40px;
+    .new-list__sileToggle {
+        position: relative;
+        // border: 1px solid #999999;
+        padding: 10px 20px;
+        border-radius: 5px;
+        p {
+            margin: 0;
+        }
+        &::after {
+            content: url("../svg/chevron-down-solid2.svg");
+            right: 8px;
+            position: absolute;
+            top: 15px;
+            transition: 0.3s;
+            // transform: rotate(180deg) translateY(54%);
+        }
+    }
+    .new-list {
+        padding-top: -8px;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-bottom: 1px solid #313437;
+            margin: 0;
+            li {
+                list-style: none;
+                padding: 7px 10px;
+                a {
+                    text-decoration: none;
+                    color: #5f5f5f;
+                    position: relative;
+                    padding: 7px 0px;
+                    // display: block;
+                    &::after {
+                        content: "";
+                        display: block;
+                        height: 0;
+                        width: 100%;
+                        background-color: $myText;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0;
+                        transition: 0.3s;
+                    }
+                    &:hover::after {
+                        height: 3px;
+                    }
+                }
+            }
+        }
+    }
+    .new-head-form {
+        border: 1px solid #e5e5e5;
+        padding: 0 4px;
+        input {
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 13px;
+            padding-left: 13px;
+            height: 45px;
+        }
+        .btn__new-form {
+            border-radius: 3px;
+            padding: 5px 5px;
+            background-color: $myText;
+            outline: none;
+            border: none;
+            color: #fff;
+            &:hover {
+                background-color: #0062cc;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .new-head .new-list ul li {
+        list-style: none;
+        max-width: 100%;
+        flex-basis: 100%;
+        padding: 7px 20px;
+    }
+    .new-head .new-list ul{
+        border-bottom: none;
+    }
+    .new-list__wrap{
+        border: 1px solid #999999;
+        border-radius: 5px;
+    }
+    .new-head .new-list__sileToggle{
+        display: block;
+    }
+    .new-head .new-list{
+        display: none;
+    }
+}
+@media screen and (min-width: 1023px){
+    .new-head .new-list__sileToggle{
+        display: none;
+    }
+    .new-head .new-list{
+        display: block;
+    }
+}
+.active1::after {
+    transform: rotate(180deg) translateY(54%);
+}
+@media screen and (max-width: 1023px) {
+    .new-head .new-list__sileToggle {
+        display: block;
+    }
+    .new-head .new-list {
+        display: none;
+    }
+    .new-head .new-head-form {
+        margin-top: 15px;
+    }
+}
+.new-body {
+    padding: 50px 0 100px 0;
+    h3 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .new-body h3 {
+        font-size: 25px;
+    }
+}
