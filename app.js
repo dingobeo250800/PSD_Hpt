@@ -29,6 +29,7 @@ $(document).ready(function () {
     }
 });
 
+// xoay rotate của affter trong option
 $(document).ready(function () {
     $('.new-list__sileToggle').click(function () {
         $(this).parent().find('.new-list').toggle(500);
@@ -60,4 +61,30 @@ $(window).scroll(function() {
 btnBack.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
+});
+
+// select-option
+$(document).ready(function(){
+    var optionList = ["Căn hộ", "Nhà phố","Shophouse","Biệt thự"];
+    $("#placeholder-typing").select2({
+        data:optionList
+    });
+});
+$(document).ready(function(){
+    var optionList1 = ["TP. Hồ Chí Minh"];
+    $("#placeholder-typing1").select2({
+        data:optionList1
+    });
+});
+$(document).ready(function(){
+    var optionList2 = ["Quận 1","Quận 2","Quận 9"];
+    $("#placeholder-typing2").select2({
+        data:optionList2
+    });
+});
+$(document).ready(function(){
+    var optionList3 = ["50 - 80 triệu/m2","80 - 120 triệu/m2","120 - 160 triệu/m2",">200 triệu/m2"];
+    $("#placeholder-typing3").select2({
+        data:optionList3
+    });
 });
